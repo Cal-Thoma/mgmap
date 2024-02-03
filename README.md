@@ -12,7 +12,7 @@
 Download the required files and unzip them.  This downloads from my google drive file.
 
 ```bash
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Vvypo1lmlLdFOl_w85TSX0UUjMR4qpp3' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Vvypo1lmlLdFOl_w85TSX0UUjMR4qpp3" -O mgmap.tar.gz && rm -rf /tmp/cookies.txt
+
 tar -xvzf mgmap.tar.gz
 ```
 
