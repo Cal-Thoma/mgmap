@@ -29,7 +29,7 @@ The databases, R packages, and scripts are all already installed on this MSI env
 # Create a conda environment to run blast searches and to synergize with our R packages
 # Create conda environment from the file in the public directory.
 module load conda 
-conda env create -f ~/../mgmap.yml
+conda env create -f ~/../public/mgmap.yml
 conda deactivate
 conda activate mgmap
 
