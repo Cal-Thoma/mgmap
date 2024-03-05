@@ -61,10 +61,12 @@ cp ~/../public/run_Mgnify_search_map.txt
 ```bash
 cd ~/mgmap # move to mgmap folder
 nano fasta.fasta # create a fasta file to blast search
-blastp -query fasta.fasta -db ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/fasta_ww_blast.out
+blastp -query fasta.fasta -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/fasta_ww_blast.out
 # enter the max number of sequences you wish to retrieve: num_sequences
 # enter the fasta file: fasta.file
 # change the name of your output file: fasta_ww_blast.out
+# EXAMPLE:
+# blastp -query MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
 cd ..
 ```
 
