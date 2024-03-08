@@ -4,13 +4,12 @@
 *By the end of this exercise, students will be able to:*
 
 - Define the term "bioremediation.” 
-- Compare and contrast microbiomes, genomes and metagenomes
+- Compare and contrast microbiomes, genomes, and metagenomes
 - Explain the pathway involved in microbial degradation of metformin
 - Analyze recent research literature to investigate the enzymes and transporters involved in microbial metformin degradation
-- Search a general bioinformatics database (BLAST) to identify proteins that are homologous to the ones involved in metformin metabolism.
-- Utilize a specific wastewater microbiome database (BioMagnify) to look for proteins that are homologous to metformin-degrading enzymes and transporters
+- Search a general bioinformatics database (BLAST) to identify proteins that are homologous to the ones involved in metformin metabolism
 - Discuss how the information found in microbiomes and metagenomes can be used to develop biotechnological applications for wastewater treatment
-- Collaborate with senior students at a partner institution to propose a wastewater treatment  application involving microbiomes and metagenomics information 
+- Collaborate with students at a partner institution to propose a wastewater treatment application involving microbiomes and metagenomics information
 
 
 Metformin is the most commonly prescribed drug in the United States and around the world for the treatment of type II diabetes. Besides its glucose-lowering capabilities, metformin has also been reported to be effective for treating other conditions such as polycystic ovarian syndrome and obesity. Metformin has recently been shown to alleviate symptoms and improve treatment outcomes in COVID-19 patients.
