@@ -30,7 +30,7 @@ The goal of this activity is to search a custom database called BioMGnify, which
 ![alt text](figure3_best.png "Title")
 ***Figure 3:** Presence of CarC homologs in WWTPs globally. The MGnify database was searched with Hidden Markov Models (HMMs) as described in the Methods section and generated using seed caffeoyl-CoA reductase (CarC) homologs from Acetobacterium and Clostridium. The search retrieved 723 metagenomes of which 499 had sufficient location metadata to plot the locations of the WWTP. In most instances, multiple metagenomic sequences were identified at a given site and the number is represented by the size of the blue circle. Some sites contained only Acetobacterium-type sequences, others only Clostridium type, and most contained both. Seven different WWTPs, shown as triangles, had a sample(s) that was identified with a higher confidence HMM (74% vs. 55%).*
 
-Figure 3 is an example of when I used this script in a paper to identify carC genes using the same database. This tool allowed us to suggest that the ability of carC to reduce carbon carbon bonds containing fluorine leading to the elimination of fluoride was happening globally.
+Figure 3 is an example of when I used this script in a paper to identify carC genes using the same database. *Acetobacterium* and *Clostridia* species are able to utilize the carC gene to reduce carbon-carbon bonds containing fluorine leading to the elimination of fluoride. This tool allowed us to suggest that reduction of fluorinated chemicals might already be happening globally through homologous proteins.
 
 ## Background Information on Metformin 
 
