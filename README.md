@@ -1,16 +1,31 @@
 # Class Assignment BICB 5309
 
-## Goals:
+## Goals and Background:
 
-We are going to explore metagenomes using a database curated by MGinfy for a metabolic network [DETERMINE LATER]. 
+Metformin is the most commonly prescribed drug in the United States and around the world for the treatment of type II diabetes. Besides its glucose-lowering capabilities, metformin has also been reported to be effective for treating other conditions such as polycystic ovarian syndrome and obesity. Metformin has recently been shown to alleviate symptoms and improve treatment outcomes in COVID-19 patients.
+ 
+Metformin cannot be completely metabolized by patients, and its residues cannot be removed by wastewater treatment plants.  Given metformin’s widespread use, this drug, and its main degradation product, guanylurea, are among the most common anthropogenic pollutants found in surface waters and wastewater treatment plants. Several research groups have recently investigated the microbial degradation of metformin as an alternative to removing the drug from surface waters and wastewater treatment facilities. Evidence from genomic and biochemical studies led to the development of a proposed metformin degradation pathway, which is depicted below (Figure 1).
 
+insert figure 1
+
+The pathway for the microbial degradation of metformin was only recently discovered. The genes encoding the enzymes necessary for the degradation of this pharmaceutical were found in bacteria from a wastewater treatment plant in Minnesota. Shortly after, researchers reported finding similar bacteria in France and China. Metformin has also been detected in rivers across the world. These observations suggest that metformin-degrading bacteria might be widespread in freshwater as well as wastewater treatment facilities worldwide. Therefore, more research needs to be done to investigate the presence of gene-encoding metfomin-degrading enzymes in wastewater and other environments. You are tasked with answering whether or not Metformin is being degraded in waste water treatment plants.
+
+Modern DNA sequencing technology and bioinformatics resources provide a unique opportunity to explore the presence of genes and proteins in metagenomes from different environments. MGnify is a database of metagenomes that represent multiple environments, including water, soil, plants, wastewater, etc. (Richardson, 2023) (Figure 2).  This database is an excellent resource for investigating the presence of genes encoding enzymes involved in the metformin degradation pathway in currently available metagenomes.  
+insert figure 2
+
+The goal of this activity is to search a custom database called BioMGnify, which contains metagenomes from wastewater treatment plants across the world. You will recieve a list of proteins of interest which are involved in the degredation of Metformin. You will BLAST these proteins against a database from MGnify.  Using your blast search you will interface an Rscript designed to map the presence and coocurrence of genes in metagenomes.
 
 
 ## Background Information on Metabolic network
 
 Background information DOI: 10.1073/pnas.2312652121
 
-[Add more later.]
+Martinez-Vaz, et al.: Wastewater bacteria remediating the pharmaceutical metformin: Genomes, plasmids and products
+Front. Bioeng. Biotechnol., 16 December 2022
+Sec. Bioprocess Engineering
+Volume 10 - 2022 | https://doi.org/10.3389/fbioe.2022.1086261
+
+Dong, L., Li, S., Huang, J., Li, W. J., & Ali, M. (2024). Co-occurrence, toxicity, and biotransformation pathways of metformin and its intermediate product guanylurea: Current state and future prospects for enhanced biodegradation strategy. The Science of the total environment, 921, 171108.
 
 ## Explore Jupyter Notebook
 
@@ -108,7 +123,8 @@ sbatch -p large run_Mgnify_search_map.txt
 
 ## Assignment questions
 
-***To potentially be changed before the class period***
+After completing the computational part of the assignment, save the map files and the metadata to your local computer using WINSCP or FILEZILLA. You will need this to prepare a presentation that you will share with your collaborators at Hamline University. They have used the same tools to look for genes involved in the degradation of Metformin as well as fluorinated compounds.  Your presentation should have 4-6 slides addressing the questions below. You can use the papers discussed in class as references to support your answers.
+
 
 ### 1. Where are waste water genes over time? (2pts)
 
