@@ -26,7 +26,7 @@ The databases, R packages, and scripts are all already installed on this MSI env
 ```bash
 # This is a comment line.  Comment lines begin with a "#". It shouldn't be a problem if they are in your code, because bash (the language we are coding in) ignores them.
 
-# Create a conda environment to run blast searches and to synergize with our R packages
+# Create a conda environment to run BLAST searches and to synergize with our R packages
 # Create conda environment from the file in the public directory.
 module load conda 
 conda env create -f ~/../public/mgmap.yml
@@ -58,9 +58,22 @@ cp ~/../public/run_Mgnify_search_map.txt
 
 ## Section for FASTA FILES AND BLAST
 
+We are going to run our BLAST searches in a batch format.  We are going to use Slurm to do this. Slurm is a type of script that requests resources from a larger computer and runs a script independent of your terminal.  You will add your fasta files to a folder and then edit a template to run a BLAST search against a wastewater protein database in the public folder of the class's shared directory.  The database was created by MGnify and modified to be BLAST compatible.
+
+A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line.
+
+### Example
+
+>crab_anapl ALPHA CRYSTALLIN B CHAIN (ALPHA(B)-CRYSTALLIN).             
+MDITIHNPLIRRPLFSWLAPSRIFDQIFGEHLQESELLPASPSLSPFLMRSPIFRMPSWLETGLSEMRLEKDKFSVNLDVKHFSPEELKVKVLGDMVEIHGKHEERQDEHGFIAREFNRKYRIPADVDPLTITSSLSLDGVLTVSAPRKQSDVPERSIPITREEKPAIAGAQRK
+>crab_bovin ALPHA CRYSTALLIN B CHAIN (ALPHA(B)-CRYSTALLIN).             
+MDIAIHHPWIRRPFFPFHSPSRLFDQFFGEHLLESDLFPASTSLSPFYLRPPSFLRAPSWIDTGLSEMRLEKDRFSVNLDVKHFSPEELKVKVLGDVIEVHGKHEERQDEHGFISREFHRKYRIPADVDPLAITSSLSSDGVLTVNGPRKQASGPERTIPITREEKPAVTAAPKK
+>crab_chick ALPHA CRYSTALLIN B CHAIN (ALPHA(B)-CRYSTALLIN).             
+MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDVKHFSPEELKVKVLGDMIEIHGKHEERQDEHGFIAREFSRKYRIPADVDPLTITSSLSLDGVLTVSAPRKQSDVPERSIPITREEKPAIAGSQRK
+
 ```bash
 cd ~/mgmap # move to mgmap folder
-nano fasta.fasta # create a fasta file to blast search
+nano YOURSEQUENCENAME.fasta # create a fasta file to BLAST search
 blastp -query fasta.fasta -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/fasta_ww_blast.out
 # enter the max number of sequences you wish to retrieve: num_sequences
 # enter the fasta file: fasta.file
@@ -79,17 +92,14 @@ Open the Mgnify_search_fv.R file and change the following variables to match you
 
 1. geonamesUsername
 2. pid_cutoff
-3. blast_search
+3. BLAST_search
 4. prot_names
 5. thresh (optional)
 
 You will also need to add your email to the run_Mgnify_search_map.txt script.
 
-This script is formatted as a slurm script.  Slurm is a type of script that requests resources from a larger computer and runs a script independent of your terminal.
-
-
 ```bash
-sbatch -p small run_Mgnify_search_map.txt
+sbatch -p large run_Mgnify_search_map.txt
 ```
 
 ## Assignment questions
