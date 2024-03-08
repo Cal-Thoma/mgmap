@@ -33,7 +33,7 @@ Dong, L., Li, S., Huang, J., Li, W. J., & Ali, M. (2024). Co-occurrence, toxicit
 
 ## Explore Jupyter Notebook
 
-Cal will present on screen the basics of jupyter notebook.  [Open your jupyter notebook here.](notebooks.msi.umn.edu)
+Cal will present on screen the basics of jupyter notebook.  [Open your jupyter notebook here.](https://www.notebooks.msi.umn.edu)
 We are going to be using Jupyter notebooks.  *This interactive computing environment requires only a web browser, and enables data analysis and visualization on our HPC resources in a shareable, reproducible notebook format.*  
 
 This means that we are going to be working in a non local computing environment, and we will need to transfer our output files to our local computers.  We will use WINSCP.  By next class period, download and [configure WinSCP](https://www.msi.umn.edu/support/faq/how-do-i-use-winscp-transfer-data)  for Windows users and [FileZilla](https://www.msi.umn.edu/support/faq/how-do-i-use-filezilla-transfer-data) for Mac users.
