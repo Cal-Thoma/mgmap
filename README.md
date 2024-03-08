@@ -18,9 +18,9 @@ Modern DNA sequencing technology and bioinformatics resources provide a unique o
 The goal of this activity is to search a custom database called BioMGnify, which contains metagenomes from wastewater treatment plants across the world (Figure 3). You will recieve a list of proteins of interest which are involved in the degredation of Metformin. You will BLAST these proteins against a database from MGnify.  Using your blast search you will interface an Rscript designed to map the presence and coocurrence of genes in metagenomes.
 
 ![alt text](figure3.png "Title")
+***Figure 3:** Presence of CarC homologs in WWTPs globally. The MGnify database was searched with Hidden Markov Models (HMMs) as described in the Methods section and generated using seed caffeoyl-CoA reductase (CarC) homologs from Acetobacterium and Clostridium. The search retrieved 723 metagenomes of which 499 had sufficient location metadata to plot the locations of the WWTP. In most instances, multiple metagenomic sequences were identified at a given site and the number is represented by the size of the blue circle. Some sites contained only Acetobacterium-type sequences, others only Clostridium type, and most contained both. Seven different WWTPs, shown as triangles, had a sample(s) that was identified with a higher confidence HMM (74% vs. 55%).*
 
-
-## Background Information on Metabolic network
+## Background Information on Metformin 
 
 Background information DOI: 10.1073/pnas.2312652121
 
