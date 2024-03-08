@@ -7,13 +7,17 @@ Metformin is the most commonly prescribed drug in the United States and around t
 Metformin cannot be completely metabolized by patients, and its residues cannot be removed by wastewater treatment plants.  Given metformin’s widespread use, this drug, and its main degradation product, guanylurea, are among the most common anthropogenic pollutants found in surface waters and wastewater treatment plants. Several research groups have recently investigated the microbial degradation of metformin as an alternative to removing the drug from surface waters and wastewater treatment facilities. Evidence from genomic and biochemical studies led to the development of a proposed metformin degradation pathway, which is depicted below (Figure 1).
 
 ![alt text](figure1.png "Title")
+***Figure 1.** Proposed pathway for the microbial degradation of metformin.*
 
 The pathway for the microbial degradation of metformin was only recently discovered. The genes encoding the enzymes necessary for the degradation of this pharmaceutical were found in bacteria from a wastewater treatment plant in Minnesota. Shortly after, researchers reported finding similar bacteria in France and China. Metformin has also been detected in rivers across the world. These observations suggest that metformin-degrading bacteria might be widespread in freshwater as well as wastewater treatment facilities worldwide. Therefore, more research needs to be done to investigate the presence of gene-encoding metfomin-degrading enzymes in wastewater and other environments. You are tasked with answering whether or not Metformin is being degraded in waste water treatment plants.
 
 Modern DNA sequencing technology and bioinformatics resources provide a unique opportunity to explore the presence of genes and proteins in metagenomes from different environments. MGnify is a database of metagenomes that represent multiple environments, including water, soil, plants, wastewater, etc. (Richardson, 2023) (Figure 2).  This database is an excellent resource for investigating the presence of genes encoding enzymes involved in the metformin degradation pathway in currently available metagenomes.  
-insert figure 2
+![alt text](figure2.png "Title")
+***Figure 2:** Diagram showing the information and workflow that allowed the creation and utilization of MGnify to search metagenomes from different environments.*
 
-The goal of this activity is to search a custom database called BioMGnify, which contains metagenomes from wastewater treatment plants across the world. You will recieve a list of proteins of interest which are involved in the degredation of Metformin. You will BLAST these proteins against a database from MGnify.  Using your blast search you will interface an Rscript designed to map the presence and coocurrence of genes in metagenomes.
+The goal of this activity is to search a custom database called BioMGnify, which contains metagenomes from wastewater treatment plants across the world (Figure 3). You will recieve a list of proteins of interest which are involved in the degredation of Metformin. You will BLAST these proteins against a database from MGnify.  Using your blast search you will interface an Rscript designed to map the presence and coocurrence of genes in metagenomes.
+
+![alt text](figure3.png "Title")
 
 
 ## Background Information on Metabolic network
