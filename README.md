@@ -60,7 +60,7 @@ cp ~/../public/run_Mgnify_search_map.txt
 
 We are going to run our BLAST searches in a batch format.  We are going to use Slurm to do this. Slurm is a type of script that requests resources from a larger computer and runs a script independent of your terminal.  You will add your fasta files to a folder and then edit a template to run a BLAST search against a wastewater protein database in the public folder of the class's shared directory.  The database was created by MGnify and modified to be BLAST compatible.
 
-A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line.
+A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line. The file extension is often abreviated to identify if the file contains the nucleic acid sequence *.fna* or the amino acid sequence *.faa*.
 
 ### Example
 
@@ -73,14 +73,18 @@ MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDV
 
 ```bash
 cd ~/mgmap # move to mgmap folder
-nano YOURSEQUENCENAME.fasta # create a fasta file to BLAST search
-blastp -query fasta.fasta -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/fasta_ww_blast.out
+wget
+```
+
+Add the following line to the 
+
+```bash
+blastp -query fasta_files/FILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/protname_ww_blast.out
 # enter the max number of sequences you wish to retrieve: num_sequences
-# enter the fasta file: fasta.file
-# change the name of your output file: fasta_ww_blast.out
+# enter the fasta file: file.faa
+# change the name of your output file: protname_ww_blast.out
 # EXAMPLE:
-# blastp -query MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
-cd ..
+# blastp -query fasta_files/MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
 ```
 
 ## Run the mgmap sequence
