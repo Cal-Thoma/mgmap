@@ -36,7 +36,7 @@ Figure 3 is an example of when I used this script in a paper to identify carC ge
 
 Background information DOI: 
 
-- https://doi.org/10.1073/pnas.2312652121
+- Tassoulas, L. J., Rankin, J. A., Elias, M. H., & Wackett, L. P. (2024). Dinickel enzyme evolved to metabolize the pharmaceutical metformin and its implications for wastewater and human microbiomes. Proceedings of the National Academy of Sciences, 121(10), e2312652121. | https://doi.org/10.1073/pnas.2312652121
 - Martinez-Vaz, et al.: Wastewater bacteria remediating the pharmaceutical metformin: Genomes, plasmids and products. Front. Bioeng. Biotechnol., 16 December 2022 Sec. Bioprocess Engineering Volume 10 - 2022 | https://doi.org/10.3389/fbioe.2022.1086261
 - Dong, L., Li, S., Huang, J., Li, W. J., & Ali, M. (2024). Co-occurrence, toxicity, and biotransformation pathways of metformin and its intermediate product guanylurea: Current state and future prospects for enhanced biodegradation strategy. The Science of the total environment, 921, 171108. | https://doi.org/0.1016/j.scitotenv.2024.171108
 
