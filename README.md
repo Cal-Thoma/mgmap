@@ -145,12 +145,22 @@ sbatch -p large run_Mgnify_search_map.txt
 
 ## Assignment questions
 
-After completing the computational part of the assignment, save the map files and the metadata to your local computer using WINSCP or FILEZILLA. You will need this to prepare a presentation that you will share with your collaborators at Hamline University. They have used the same tools to look for genes involved in the degradation of Metformin as well as fluorinated compounds.  Your presentation should have 4-6 slides addressing the questions below. You can use the papers discussed in class as references to support your answers.
+After completing the computational part of the assignment, save the map files and the metadata to your local computer using WINSCP or FILEZILLA. You will need this to prepare a presentation that you will share with your collaborators at Hamline University. They have used the same tools to look for genes involved in the degradation of Metformin as well as fluorinated compounds.  Your presentation should have 4-6 slides addressing the questions below.  The slides should at some point answer **all** of the questions below.  You may include the answer to the question in the presenter notes, but the slide must add or illustrate your point. You can use the papers discussed in class as references to support your answers.
+
+To submit your assignment you will submit your slides to canvas and answer the individual questions seperately. **Even if you have answered the questions in your slides, submit your questions as a seperate document.**
+
+Which metformin degradation genes did you look for in your BLAST searches? What were the percent identity cutoffs used for the search?
+What is the function of the proteins encoded by the genes selected for your blast searches? Briefly describe what they do in the metformin degradation pathway 
+(enzymes, transporters, etc.)
+Where were the genes you searched for most prevalent? What does the prevalence of the genes you investigated suggest about the consumption of metformin and other biguanides? 
+Did you observe co-occurence between the genes encoding the enzymes in the metformin pathway? What does cooccurence of these genes suggest?  
+What types of functional genomic applications can be developed from the information found in MGnify database?
+How would the applications discussed in question five be applied to improve wastewater treatment? 
 
 
 ### 1. Where are waste water genes over time? (2pts)
 
-Look at the metadata file in the output. Where are genes located over time?  What does that say about Metformin?  What trend would you expect with something like galgene and why? ***Connect this question better to the paper***
+Look at the metadata file in the output. Where are genes located over time?  What does that say about Metformin?  What trend would you expect with something like galgene and why?
 
 ### 2. Using the mgmap script and metagenomic data(2pts)
 
