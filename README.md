@@ -42,14 +42,14 @@ Background information DOI:
 
 ## Explore Jupyter Notebook
 
-Cal will present on screen the basics of jupyter notebook.  [Open your jupyter notebook here.](https://[www.notebooks.msi.umn.edu](https://www.msi.umn.edu/support/faq/how-do-i-get-started-jupyter-notebooks)
+Cal will present on screen the basics of jupyter notebook.  [Open your jupyter notebook here.](https://www.msi.umn.edu/support/faq/how-do-i-get-started-jupyter-notebooks)
 We are going to be using Jupyter notebooks.  *This interactive computing environment requires only a web browser, and enables data analysis and visualization on our HPC resources in a shareable, reproducible notebook format.*  
 
 This means that we are going to be working in a non local computing environment, and we will need to transfer our output files to our local computers.  We will use WINSCP or Filezilla depending on your OS.  By next class period, download and [configure WinSCP](https://www.msi.umn.edu/support/faq/how-do-i-use-winscp-transfer-data)  for Windows users and [FileZilla](https://www.msi.umn.edu/support/faq/how-do-i-use-filezilla-transfer-data) for Mac users.
 
 ## Setting up
 
-The databases, R packages, and scripts are all already installed on this MSI environment. You will just need to copy a few of these files and set up a directory.
+The databases, R packages, and scripts are all already installed on this MSI environment and shared in the public folder. You will just need to copy a few of these files and set up a directory.
 
 ```bash
 # This is a comment line.  Comment lines begin with a "#". It shouldn't be a problem if they are in your code, because bash (the language we are coding in) ignores them.
@@ -61,7 +61,10 @@ conda env create -f ~/../public/mgmap.yml
 conda deactivate
 conda activate mgmap
 
-# If those last two lines do not work.  Restart your Jupyter Notebook by starting and stopping your server through the Hub Control Pannel under 'File'.
+# If those last two lines do not work.  Run the following line to initialize conda.
+conda init bash
+
+# Then restart your Jupyter Notebook by starting and stopping your server through the Hub Control Pannel under 'File'.
 ```
 
 Create some directories that our R file will recognize. Run the following code in your terminal.
@@ -86,7 +89,7 @@ cp ~/../public/run_Mgnify_search_map.txt
 
 ## Section for FASTA FILES AND BLAST
 
-We are going to run our BLAST searches in a batch format.  We are going to use Slurm to do this. Slurm is a type of script that requests resources from a larger computer and runs a script independent of your terminal.  You will add your fasta files to a folder and then edit a template to run a BLAST search against a wastewater protein database in the public folder of the class's shared directory.  The database was created by MGnify and modified to be BLAST compatible.
+We are going to run our BLAST searches in a batch format.  We are going to use SLURM to do this. SLURM is a type of script that requests resources from a larger computer and runs a script independent of your terminal. You will add your fasta files to a folder and then edit a template to run a BLAST search against a wastewater protein database in the public folder of the class's shared directory.  The database was created by MGnify and modified to be BLAST compatible.
 
 A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line. The file extension is often abreviated to identify if the file contains the nucleic acid sequence *.fna* or the amino acid sequence *.faa*.
 
@@ -104,7 +107,7 @@ cd ~/mgmap # move to mgmap folder
 wget
 ```
 
-Add the following line to the 
+Add the following line to the *blast_combo_search.txt* file and also add your email to the parameters where prompted.
 
 ```bash
 blastp -query fasta_files/FILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/protname_ww_blast.out
@@ -113,6 +116,12 @@ blastp -query fasta_files/FILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -ma
 # change the name of your output file: protname_ww_blast.out
 # EXAMPLE:
 # blastp -query fasta_files/MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
+```
+
+After editing your SLURM script.  Run it using the following command.
+
+```bash
+sbatch -p large blast_combo_search.txt
 ```
 
 ## Run the mgmap sequence
@@ -128,7 +137,7 @@ Open the Mgnify_search_fv.R file and change the following variables to match you
 4. prot_names
 5. thresh (optional)
 
-You will also need to add your email to the run_Mgnify_search_map.txt script.
+Again we are going to run this script via SLURM.  In the future you could set up one script to run your blast searches and run the Rscript. You will also need to add your email to the run_Mgnify_search_map.txt script.
 
 ```bash
 sbatch -p large run_Mgnify_search_map.txt
