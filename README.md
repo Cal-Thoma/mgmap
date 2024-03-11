@@ -162,14 +162,35 @@ What types of functional genomic applications can be developed from the informat
 How would the applications discussed in question five be applied to improve wastewater treatment? 
 
 
-### 1. Where are waste water genes over time? (2pts)
+### 1. General search info (0.5 pts)
 
-Look at the metadata file in the output. Where are genes located over time?  What does that say about Metformin?  What trend would you expect with something like galgene and why?
+Which metformin degradation genes did you look for in your BLAST searches? What were the percent identity cutoffs used for the search?
 
-### 2. Using the mgmap script and metagenomic data(2pts)
+### 2. The Metformin Breakdown Pathway (1 pt)
+What is the function of the proteins encoded by the genes selected for your blast searches? Briefly describe what they do in the metformin degradation pathway 
+(enzymes, transporters, etc.)
 
-What can we conclude about metagenomic data?  Are the genes found on the map in the same organism?  If you found a crcB gene (a fluoride exporter) in a sample and a defluorinase gene at the same site, would the site be capable of defluorination?  Why or why not?
+### 3. Search Results (0.5 pts)
 
-### 3. NEED TO ADD MORE QUESTIONS!!!
+Where were the genes you searched for most prevalent? What does the prevalence of the genes you investigated suggest about the consumption of metformin and other biguanides? 
 
+### 4. Where are waste water genes over time? (2.5 pts)
+
+Look at the metadata file in the output. Where are genes located over time?  What does that say about Metformin?  
+
+What trend would you expect with something like galegine or phenformin/buformin? Why?
+
+### 5. Coocurrance (2.5 pts)
+
+Did you observe co-occurence between the genes encoding the enzymes in the metformin pathway? What does cooccurence of these genes suggest?  
+
+Are the genes found on the map in the same organism?
+
+If you found a crcB gene (a fluoride exporter) in a sample and a defluorinase gene at the same site, would the site be necessarily capable of defluorination?  Why or why not?
+
+### 6. Applications (1.5 pts)
+  
+What types of functional genomic applications can be developed from the information found in MGnify database?
+
+How would the applications discussed in question five be applied to improve wastewater treatment? 
 
