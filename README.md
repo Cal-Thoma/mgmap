@@ -120,7 +120,7 @@ rm main.zip
 rm -r mgmap-main
 ```
 
-Add the following line to the *blast_combo_search.txt* file and also add your email to the parameters where prompted.
+Add the following line to the *blast_combo_search.txt* file for each fasta file, and also add your email to the parameters where prompted.
 
 ```bash
 blastp -query fasta_files/FILE.txt -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/protname_ww_blast.out
