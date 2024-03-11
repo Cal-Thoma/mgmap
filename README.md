@@ -110,7 +110,8 @@ MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDV
 
 ```bash
 cd ~/mgmap # move to mgmap folder
-wget https://githubusercontent.com/Cal-Thoma/mgmap/blob/main/fasta_files.zip
+wget https://raw.githubusercontent.com/Cal-Thoma/mgmap/blob/main/fasta_files.zip
+
 ```
 
 Add the following line to the *blast_combo_search.txt* file and also add your email to the parameters where prompted.
