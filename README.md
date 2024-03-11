@@ -187,11 +187,10 @@ Did you observe co-occurence between the genes encoding the enzymes in the Metfo
 
 Are the genes found on the map in the same organism?
 
-If you found a crcB gene (a fluoride exporter) in a sample and a defluorinase gene at the same site, would the site be necessarily capable of defluorination?  Why or why not?
+If you found a crcB gene (a fluoride exporter) in a sample and a defluorinase gene in the same sample, would the site be necessarily capable of defluorination?  Why or why not?
 
 ### 6. Applications (1.5 pts)
   
 What types of functional genomic applications can be developed from the information found in MGnify database?
 
-How would the applications discussed in question five be applied to improve wastewater treatment? 
-
+How would the applications discussed in the previous question be applied to improve wastewater treatment? 
