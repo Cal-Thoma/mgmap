@@ -95,7 +95,7 @@ We are going to run our BLAST searches in a batch format.  We are going to use S
 
 A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line. The file extension is often abreviated to identify if the file contains the nucleic acid sequence *.fna* or the amino acid sequence *.faa*.  Our collaborators from Hamline provided us with sequences in a *.txt* format.  Even though the extension is not a fasta extension, the format of the files is still fasta and thus will be refered to as fasta files.
 
-Note on fasta files.  Metforminase was formerly known as gbuAB.  The fasta files use this name.  At some point rename this to 
+> Note on fasta files.  Metforminase was formerly known as gbuAB.  The fasta files use this name.  At some point rename this to MftAB
 
 ### Example
 
