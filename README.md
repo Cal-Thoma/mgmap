@@ -111,18 +111,24 @@ MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDV
 ```bash
 cd ~/mgmap # move to mgmap folder
 wget https://raw.githubusercontent.com/Cal-Thoma/mgmap/blob/main/fasta_files.zip
-
+unzip mgmap-main
+cd magmap-main
+unzip fasta_files.zip
+mv fasta_files ../
+cd ..
+rm main.zip
+rm -r mgmap-main
 ```
 
 Add the following line to the *blast_combo_search.txt* file and also add your email to the parameters where prompted.
 
 ```bash
-blastp -query fasta_files/FILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/protname_ww_blast.out
+blastp -query fasta_files/FILE.txt -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs num_sequences > /input/protname_ww_blast.out
 # enter the max number of sequences you wish to retrieve: num_sequences
-# enter the fasta file: file.faa
+# enter the fasta file: file.txt
 # change the name of your output file: protname_ww_blast.out
 # EXAMPLE:
-# blastp -query fasta_files/MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
+# blastp -query fasta_files/MYFASTAFILE.txt -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
 ```
 
 After editing your SLURM script, call Cal over to verify that everything looks right.  Then, run it using the following command.
