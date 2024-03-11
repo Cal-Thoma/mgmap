@@ -83,15 +83,17 @@ mkdir output
 Now we have all of the required directories. We are going to copy a few of the scripts. You will edit these scripts, so copy and don't move them!
 
 ```bash
+cd ~/mgmap
 cp ~/../public/Mgnify_search_fv.R
 cp ~/../public/run_Mgnify_search_map.txt
+cp ~/../public/blast_combo_search.txt
 ```
 
 ## Section for FASTA FILES AND BLAST
 
 We are going to run our BLAST searches in a batch format.  We are going to use SLURM to do this. SLURM is a type of script that requests resources from a larger computer and runs a script independent of your terminal. You will add your fasta files to a folder and then edit a template to run a BLAST search against a wastewater protein database in the public folder of the class's shared directory.  The database was created by MGnify and modified to be BLAST compatible.
 
-A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line. The file extension is often abreviated to identify if the file contains the nucleic acid sequence *.fna* or the amino acid sequence *.faa*.
+A fasta file is a file format containing nucleotide or protein data.  They begin with an annotation line containing ">" as the first character.  FASTA files may contain more than one sequence as long as they are seperated by a *\n* and an additional annotation line. The file extension is often abreviated to identify if the file contains the nucleic acid sequence *.fna* or the amino acid sequence *.faa*.  Our collaborators from Hamline provided us with sequences in a *.txt* format.  Even though the extension is not a fasta extension, the format of the files is still fasta and thus will be refered to as fasta files.
 
 ### Example
 
@@ -101,6 +103,8 @@ MDITIHNPLIRRPLFSWLAPSRIFDQIFGEHLQESELLPASPSLSPFLMRSPIFRMPSWLETGLSEMRLEKDKFSVNLDV
 MDIAIHHPWIRRPFFPFHSPSRLFDQFFGEHLLESDLFPASTSLSPFYLRPPSFLRAPSWIDTGLSEMRLEKDRFSVNLDVKHFSPEELKVKVLGDVIEVHGKHEERQDEHGFISREFHRKYRIPADVDPLAITSSLSSDGVLTVNGPRKQASGPERTIPITREEKPAVTAAPKK\
 \>crab_chick ALPHA CRYSTALLIN B CHAIN (ALPHA(B)-CRYSTALLIN).             
 MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDVKHFSPEELKVKVLGDMIEIHGKHEERQDEHGFIAREFSRKYRIPADVDPLTITSSLSLDGVLTVSAPRKQSDVPERSIPITREEKPAIAGSQRK
+
+### Batch Search
 
 ```bash
 cd ~/mgmap # move to mgmap folder
@@ -118,7 +122,7 @@ blastp -query fasta_files/FILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -ma
 # blastp -query fasta_files/MYFASTAFILE.faa -db ~/../public/ww_proteins.faa -outfmt 6 -max_target_seqs 200 > /input/MYOUTPUTFILENAME.out
 ```
 
-After editing your SLURM script.  Run it using the following command.
+After editing your SLURM script, call Cal over to verify that everything looks right.  Then, run it using the following command.
 
 ```bash
 sbatch -p large blast_combo_search.txt
