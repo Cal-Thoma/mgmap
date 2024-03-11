@@ -5,23 +5,23 @@
 
 - Define the term "bioremediation.” 
 - Compare and contrast microbiomes, genomes, and metagenomes
-- Explain the pathway involved in microbial degradation of metformin
-- Analyze recent research literature to investigate the enzymes and transporters involved in microbial metformin degradation
-- Search a general bioinformatics database (BLAST) to identify proteins that are homologous to the ones involved in metformin metabolism
+- Explain the pathway involved in microbial degradation of Metformin
+- Analyze recent research literature to investigate the enzymes and transporters involved in microbial Metformin degradation
+- Search a general bioinformatics database (BLAST) to identify proteins that are homologous to the ones involved in Metformin metabolism
 - Discuss how the information found in microbiomes and metagenomes can be used to develop biotechnological applications for wastewater treatment
 - Collaborate with students at a partner institution to propose a wastewater treatment application involving microbiomes and metagenomics information
 
 
-Metformin is the most commonly prescribed drug in the United States and around the world for the treatment of type II diabetes. Besides its glucose-lowering capabilities, metformin has also been reported to be effective for treating other conditions such as polycystic ovarian syndrome and obesity. Metformin has recently been shown to alleviate symptoms and improve treatment outcomes in COVID-19 patients.
+Metformin is the most commonly prescribed drug in the United States and around the world for the treatment of type II diabetes. Besides its glucose-lowering capabilities, Metformin has also been reported to be effective for treating other conditions such as polycystic ovarian syndrome and obesity. Metformin has recently been shown to alleviate symptoms and improve treatment outcomes in COVID-19 patients.
  
-Metformin cannot be completely metabolized by patients, and its residues cannot be removed by wastewater treatment plants.  Given metformin’s widespread use, this drug, and its main degradation product, guanylurea, are among the most common anthropogenic pollutants found in surface waters and wastewater treatment plants. Several research groups have recently investigated the microbial degradation of metformin as an alternative to removing the drug from surface waters and wastewater treatment facilities. Evidence from genomic and biochemical studies led to the development of a proposed metformin degradation pathway, which is depicted below (Figure 1).
+Metformin cannot be completely metabolized by patients, and its residues cannot be removed by wastewater treatment plants.  Given Metformin’s widespread use, this drug, and its main degradation product, guanylurea, are among the most common anthropogenic pollutants found in surface waters and wastewater treatment plants. Several research groups have recently investigated the microbial degradation of Metformin as an alternative to removing the drug from surface waters and wastewater treatment facilities. Evidence from genomic and biochemical studies led to the development of a proposed Metformin degradation pathway, which is depicted below (Figure 1).
 
 ![alt text](figure1.png "Title")
-***Figure 1.** Proposed pathway for the microbial degradation of metformin.*
+***Figure 1.** Proposed pathway for the microbial degradation of Metformin.*
 
-The pathway for the microbial degradation of metformin was only recently discovered. The genes encoding the enzymes necessary for the degradation of this pharmaceutical were found in bacteria from a wastewater treatment plant in Minnesota. Shortly after, researchers reported finding similar bacteria in France and China. Metformin has also been detected in rivers across the world. These observations suggest that metformin-degrading bacteria might be widespread in freshwater as well as wastewater treatment facilities worldwide. Therefore, more research needs to be done to investigate the presence of gene-encoding metfomin-degrading enzymes in wastewater and other environments. You are tasked with answering whether or not Metformin is being degraded in waste water treatment plants.
+The pathway for the microbial degradation of Metformin was only recently discovered. The genes encoding the enzymes necessary for the degradation of this pharmaceutical were found in bacteria from a wastewater treatment plant in Minnesota. Shortly after, researchers reported finding similar bacteria in France and China. Metformin has also been detected in rivers across the world. These observations suggest that Metformin-degrading bacteria might be widespread in freshwater as well as wastewater treatment facilities worldwide. Therefore, more research needs to be done to investigate the presence of gene-encoding metfomin-degrading enzymes in wastewater and other environments. You are tasked with answering whether or not Metformin is being degraded in waste water treatment plants.
 
-Modern DNA sequencing technology and bioinformatics resources provide a unique opportunity to explore the presence of genes and proteins in metagenomes from different environments. MGnify is a database of metagenomes that represent multiple environments, including water, soil, plants, wastewater, etc. (Richardson, 2023) (Figure 2).  This database is an excellent resource for investigating the presence of genes encoding enzymes involved in the metformin degradation pathway in currently available metagenomes.  
+Modern DNA sequencing technology and bioinformatics resources provide a unique opportunity to explore the presence of genes and proteins in metagenomes from different environments. MGnify is a database of metagenomes that represent multiple environments, including water, soil, plants, wastewater, etc. (Richardson, 2023) (Figure 2).  This database is an excellent resource for investigating the presence of genes encoding enzymes involved in the Metformin degradation pathway in currently available metagenomes.  
 ![alt text](figure2.png "Title")
 ***Figure 2:** Diagram showing the information and workflow that allowed the creation and utilization of MGnify to search metagenomes from different environments.*
 
@@ -36,9 +36,9 @@ Figure 3 is an example of when I used this script in a paper to identify carC ge
 
 Background information DOI: 
 
-- Tassoulas, L. J., Rankin, J. A., Elias, M. H., & Wackett, L. P. (2024). Dinickel enzyme evolved to metabolize the pharmaceutical metformin and its implications for wastewater and human microbiomes. Proceedings of the National Academy of Sciences, 121(10), e2312652121. | https://doi.org/10.1073/pnas.2312652121
-- Martinez-Vaz, et al.: Wastewater bacteria remediating the pharmaceutical metformin: Genomes, plasmids and products. Front. Bioeng. Biotechnol., 16 December 2022 Sec. Bioprocess Engineering Volume 10 - 2022 | https://doi.org/10.3389/fbioe.2022.1086261
-- Dong, L., Li, S., Huang, J., Li, W. J., & Ali, M. (2024). Co-occurrence, toxicity, and biotransformation pathways of metformin and its intermediate product guanylurea: Current state and future prospects for enhanced biodegradation strategy. The Science of the total environment, 921, 171108. | https://doi.org/0.1016/j.scitotenv.2024.171108
+- Tassoulas, L. J., Rankin, J. A., Elias, M. H., & Wackett, L. P. (2024). Dinickel enzyme evolved to metabolize the pharmaceutical Metformin and its implications for wastewater and human microbiomes. Proceedings of the National Academy of Sciences, 121(10), e2312652121. | https://doi.org/10.1073/pnas.2312652121
+- Martinez-Vaz, et al.: Wastewater bacteria remediating the pharmaceutical Metformin: Genomes, plasmids and products. Front. Bioeng. Biotechnol., 16 December 2022 Sec. Bioprocess Engineering Volume 10 - 2022 | https://doi.org/10.3389/fbioe.2022.1086261
+- Dong, L., Li, S., Huang, J., Li, W. J., & Ali, M. (2024). Co-occurrence, toxicity, and biotransformation pathways of Metformin and its intermediate product guanylurea: Current state and future prospects for enhanced biodegradation strategy. The Science of the total environment, 921, 171108. | https://doi.org/0.1016/j.scitotenv.2024.171108
 
 ## Explore Jupyter Notebook
 
@@ -156,15 +156,15 @@ To submit your assignment you will submit your slides to canvas and answer the i
 
 ### 1. General search info (0.5 pts)
 
-Which metformin degradation genes did you look for in your BLAST searches? What were the percent identity cutoffs used for the search?
+Which Metformin degradation genes did you look for in your BLAST searches? What were the percent identity cutoffs used for the search?
 
 ### 2. The Metformin Breakdown Pathway (1 pt)
-What is the function of the proteins encoded by the genes selected for your blast searches? Briefly describe what they do in the metformin degradation pathway 
+What is the function of the proteins encoded by the genes selected for your blast searches? Briefly describe what they do in the Metformin degradation pathway 
 (enzymes, transporters, etc.)
 
 ### 3. Search Results (0.5 pts)
 
-Where were the genes you searched for most prevalent? What does the prevalence of the genes you investigated suggest about the consumption of metformin and other biguanides? 
+Where were the genes you searched for most prevalent? What does the prevalence of the genes you investigated suggest about the consumption of Metformin and other biguanides? 
 
 ### 4. Where are waste water genes over time? (2.5 pts)
 
@@ -174,7 +174,7 @@ What trend would you expect with something like galegine or phenformin/buformin?
 
 ### 5. Coocurrance (2.5 pts)
 
-Did you observe co-occurence between the genes encoding the enzymes in the metformin pathway? What does cooccurence of these genes suggest?  
+Did you observe co-occurence between the genes encoding the enzymes in the Metformin pathway? What does cooccurence of these genes suggest?  
 
 Are the genes found on the map in the same organism?
 
