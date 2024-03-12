@@ -1,5 +1,8 @@
 # Class Assignment BICB 5309
 
+
+https://www.msi.umn.edu/support/faq/how-do-i-configure-putty-connect-msi-unix-systems
+
 ## Goals and Background:
 *By the end of this exercise, students will be able to:*
 
