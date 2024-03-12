@@ -83,10 +83,10 @@ mkdir output
 Now we have all of the required directories. We are going to copy a few of the scripts. You will edit these scripts, so copy and don't move them!
 
 ```bash
-cd ~/mgmap
-cp ~/../public/Mgnify_search_fv.R
-cp ~/../public/run_Mgnify_search_map.txt
-cp ~/../public/blast_combo_search.txt
+cd ~/../public
+cp Mgnify_search_fv.R ~/mgmap
+cp run_Mgnify_search_map.txt ~/mgmap
+cp blast_combo_search.txt ~/mgmap
 ```
 
 ## Section for FASTA FILES AND BLAST
