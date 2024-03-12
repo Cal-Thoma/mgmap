@@ -114,8 +114,8 @@ MDITIHNPLVRRPLFSWLTPSRIFDQIFGEHLQESELLPTSPSLSPFLMRSPFFRMPSWLETGLSEMRLEKDKFSVNLDV
 ```bash
 cd ~/mgmap # move to mgmap folder
 wget https://raw.githubusercontent.com/Cal-Thoma/mgmap/blob/main/fasta_files.zip
-unzip mgmap-main
-cd magmap-main
+unzip main.zip
+cd mgmap-main
 unzip fasta_files.zip
 mv fasta_files ../
 cd ..
