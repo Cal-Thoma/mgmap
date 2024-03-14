@@ -158,6 +158,8 @@ Open the Mgnify_search_fv.R file and change the following variables to match you
 
 Again we are going to run this script via SLURM.  In the future you could set up one script to run your blast searches and run the Rscript. You will also need to add your email to the run_Mgnify_search_map.txt script.
 
+> Add the line ~/mgmap after the hashtags
+
 ```bash
 sbatch -p large run_Mgnify_search_map.txt
 ```
